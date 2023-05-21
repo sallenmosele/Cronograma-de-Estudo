@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cronograma de Estudos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cronograma de Estudo</h1>
+        <form>
+            <label for="subject">Matéria:</label>
+            <input type="text" id="subject">
+            <label for="day">Dia:</label>
+            <select id="day">
+                <option value="Segunda">Segunda-feira</option>
+                <option value="Terça">Terça-feira</option>
+                <option value="Quarta">Quarta-feira</option>
+                <option value="Quinta">Quinta-feira</option>
+                <option value="Sexta">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <label for="time">Hora:</label>
+            <input type="time" id="time">
+            <button type="button" onclick="addSchedule()">Adicionar Estudo</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleList">
+            </tbody>
+        </table>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
